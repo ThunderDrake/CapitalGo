@@ -1,0 +1,26 @@
+.hero-card {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  background: linear-gradient(298.97deg, #0d0f29 53.46%, #222550 97.96%);
+
+  &__icon {
+    margin-right: 25px;
+    width: 94px;
+  }
+
+  &__title {
+    margin: 0;
+    padding-top: 0.99vw;
+    padding-right: 0.89vw;
+    padding-bottom: 0.98vw;
+    font-weight: 600;
+    font-size: 0.94vw;
+    line-height: 130%;
+    color: #fff;
+
+    span {
+      color: #e21616;
+    }
+  }
+}

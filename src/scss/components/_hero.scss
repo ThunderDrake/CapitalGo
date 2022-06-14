@@ -1,0 +1,59 @@
+.hero {
+  height: 51vw;
+  // max-height: 51vw;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__container {
+    position: relative;
+    padding-top: calc(var(--header-height) + 6.35vw);
+  }
+
+  &__content {
+    margin-bottom: 4.48vw;
+    width: 70%;
+  }
+
+  &__title {
+    margin-bottom: 2.5vw;
+  }
+
+  &__cards {
+    display: grid;
+    column-gap: 0.78vw;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.94vw;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.38vw;
+
+    &-decor {
+      margin-right: 25px;
+      width: 34px;
+      height: 40px;
+    }
+  }
+
+  &__button {
+    margin-right: 22px;
+  }
+
+  &__small-text {
+    font-weight: 400;
+    font-size: 0.99vw;
+    line-height: 130%;
+    color: var(--light-color);
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    bottom: -4.38vw;
+    width: 25.65vw;
+    height: 43.5vw;
+  }
+}

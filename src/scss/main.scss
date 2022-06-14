@@ -5,9 +5,13 @@
 @import "settings";
 
 // подключения компонентов страницы
+@import "./components/ui";
+@import "./components/button";
 @import "./components/header";
 @import "./components/links";
 @import "./components/logo";
 @import "./components/socials";
 @import "./components/phone";
 @import "./components/burger";
+@import "./components/hero";
+@import "./components/hero-card";
