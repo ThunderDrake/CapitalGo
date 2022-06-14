@@ -1,0 +1,16 @@
+.burger {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.83vw;
+  line-height: 160%;
+  color: var(--text-light-color);
+
+  &__icon {
+    --current-color: var(--text-light-color);
+
+    margin-left: 14px;
+    width: 24px;
+    height: 16px;
+  }
+}

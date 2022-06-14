@@ -1,0 +1,33 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    position: relative;
+    display: block;
+    margin-left: 25px;
+    padding-left: 25px;
+    width: 8.85vw;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: var(--text-light-color);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      height: 100%;
+      background-color: var(--dark-red-color);
+    }
+  }
+
+  &__image {
+    width: 7.81vw;
+    height: 3.75vw;
+  }
+}

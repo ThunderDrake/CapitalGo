@@ -1,0 +1,16 @@
+.socials {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin-right: 8px;
+
+    &-icon {
+      --current-color: var(--main-red-color);
+
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
