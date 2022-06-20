@@ -36,3 +36,51 @@
 .--text-red {
   color: var(--main-red-color);
 }
+
+.--button-pulse {
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    z-index: 1;
+    border-radius: 50%;
+    width: 200%;
+    height: 200%;
+    background-color: #fff;
+    opacity: 0.3;
+    transform: translate(-25%, 75%) scale(0);
+    animation: button-pulse 15s infinite;
+  }
+}
+
+@keyframes button-pulse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-25%, 75%) scale(0);
+    transform: translate(-25%, 75%) scale(0);
+  }
+
+  10% {
+    opacity: 0.5;
+  }
+
+  15% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+    -webkit-transform: translate(-25%, 75%) scale(1.8);
+    transform: translate(-25%, 75%) scale(1.8);
+  }
+
+  30% {
+    opacity: 0;
+    -webkit-transform: translate(-25%, 75%) scale(0);
+    transform: translate(-25%, 75%) scale(0);
+  }
+}

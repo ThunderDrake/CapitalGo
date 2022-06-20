@@ -1,6 +1,5 @@
 .hero {
   height: 51vw;
-  // max-height: 51vw;
   background-image: url("../img/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,6 +26,7 @@
   }
 
   &__controls {
+    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 4.38vw;
@@ -55,5 +55,12 @@
     bottom: -4.38vw;
     width: 25.65vw;
     height: 43.5vw;
+  }
+
+  &__tooltip-wrapper {
+    position: absolute;
+    right: -4%;
+    top: -5%;
+    z-index: 5;
   }
 }

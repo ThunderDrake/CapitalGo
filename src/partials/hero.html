@@ -1,20 +1,40 @@
 <section class="hero">
   <div class="container hero__container">
     <div class="hero__content">
-      <h1 class="hero__title --h1 --text-gray-gradient">Обучение трейдингу и инвестициям со скидкой -35% от трейдера со стажем 12 лет</h1>
+      <h1 class="hero__title --h1 --text-gray-gradient">Обучение трейдингу и инвестициям со скидкой -35% от трейдера со
+        стажем 12 лет</h1>
       <div class="hero__controls">
-        <img loading="lazy" src="img/candlestick.svg" class="hero__controls-decor" width="34" height="40" aria-hidden="true">
-        <button class="btn-reset hero__button button button--main --button-shadow-25" data-graph-path="modalForm">Записаться на бесплатное занятие</button>
-        <div class="hero__small-text">От профессионалов финансового мира, обучивших <span class="--text-red">>100</span> трейдеров</div>
+        <img loading="lazy" src="img/candlestick.svg" class="hero__controls-decor" width="34" height="40"
+          aria-hidden="true">
+        <button class="btn-reset hero__button button button--main --button-shadow-25 --button-pulse"
+          data-graph-path="modalForm">Записаться на бесплатное занятие</button>
+        <div class="hero__small-text">От профессионалов финансового мира, обучивших <span class="--text-red">>100</span>
+          трейдеров</div>
+        <div class="hero__tooltip-wrapper">
+          <span class="tooltip hero__tooltip">
+            <button class="tooltip__btn btn-reset" aria-describedby="heroTooltip">
+              <svg class="tooltip__btn-icon">
+                <use xlink:href="img/sprite.svg#plus"></use>
+              </svg>
+            </button>
+            <span class="tooltip__txt" role="tooltip" id="heroTooltip">
+              <span class="visually-hidden">Тултип: </span>
+              <p>Мы обучили более <strong>100 трейдеров</strong>, 70% из которых в данный момент стабильно зарабатывают на рынке.</p>
+              <p>Обучение проходит <strong>в группах из 2-4 человек</strong>, что фактически позволяет индивидуально работать с каждым. На время обучения создается группа/чат, где каждый может задавать вопросы, делиться сложностями <strong>и получать поддержку в режиме 24/7.</strong></p>
+              <p>После завершения обучения Вы можете присоединиться к сообществу трейдеров, получать советы/рекомендации,
+                поддержку и, набравшись опыта, самим <strong>стать членом команды.</strong></p>
+            </span>
+          </span>
+        </div>
       </div>
       <div class="hero__cards">
         @loop('./hero-card.html', [
-          {title: "Обучение онлайн — <br><span>скидка 35%</span>", iconName:"pig"},
-          {title: "Опыт успешного обучения более <br><span>8 лет</span>", iconName:"cow"},
-          {title: "<span>19</span> прибыльных <span>стратегий</span>", iconName:"coin"},
-          {title: "Опытный трейдер с опытом торгов <br><span>12 лет</span>", iconName:"call"},
-          {title: "<span>Бесплатное занятие</span> с подбором правильного курса", iconName:"bulb"},
-          {title: "Полная поддержка в течении <span>1 года</span>", iconName:"social"}
+        {title: "Обучение онлайн — <br><span>скидка 35%</span>", iconName:"pig"},
+        {title: "Опыт успешного обучения более <br><span>8 лет</span>", iconName:"cow"},
+        {title: "<span>19</span> прибыльных <span>стратегий</span>", iconName:"coin"},
+        {title: "Опытный трейдер с опытом торгов <br><span>12 лет</span>", iconName:"call"},
+        {title: "<span>Бесплатное занятие</span> с подбором правильного курса", iconName:"bulb"},
+        {title: "Полная поддержка в течении <span>1 года</span>", iconName:"social"}
         ])
       </div>
     </div>
@@ -22,7 +42,8 @@
       <picture>
         <source srcset="img/hero-image.avif" type="image/avif">
         <source srcset="img/hero-image.webp" type="image/webp">
-        <img loading="lazy" src="img/hero-image.png" class="hero__image" width="492" height="838" alt="Сергей Ринейский - Основатель школы">
+        <img loading="lazy" src="img/hero-image.png" class="hero__image" width="492" height="838"
+          alt="Сергей Ринейский - Основатель школы">
       </picture>
     </div>
   </div>
