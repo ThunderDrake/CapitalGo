@@ -1,0 +1,56 @@
+.learn {
+  &__content {
+    display: grid;
+    column-gap: 1.15vw;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__list {
+    margin-bottom: 1.82vw;
+
+    &-item {
+      position: relative;
+      font-size: 1.25vw;
+      line-height: 130%;
+      color: var(--text-dark-color);
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -37px;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        background-image: url("../img/sprite.svg#list-bullet");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translateY(50%);
+        pointer-events: none;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1.3vw;
+      }
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__text {
+    padding-left: 40px;
+  }
+
+  &__graph-image {
+    width: 33.07vw;
+    height: 25.26vw;
+  }
+
+  &__button {
+    padding: 1.15vw 2.2vw 1.35vw;
+    max-width: 20.3vw;
+    font-size: 0.89vw;
+  }
+}
