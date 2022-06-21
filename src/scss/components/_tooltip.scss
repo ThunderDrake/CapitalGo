@@ -2,27 +2,6 @@
   position: relative;
   z-index: 1;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    display: block;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 1rem rgba(169 31 35 / 100%);
-    background: rgba(169 31 35 / 100%);
-    -webkit-animation: pulse 3s infinite;
-    animation: pulse 3s infinite;
-  }
-
-  &::after {
-    animation-delay: 0.65s;
-  }
-
   &__btn {
     display: flex;
     align-items: center;
@@ -31,6 +10,27 @@
     width: 30px;
     height: 30px;
     background-color: #fb242a;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      display: block;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      box-shadow: 0 0 1rem rgba(169 31 35 / 100%);
+      background: rgba(169 31 35 / 100%);
+      -webkit-animation: pulse 3s infinite;
+      animation: pulse 3s infinite;
+    }
+
+    &::after {
+      animation-delay: 0.65s;
+    }
 
     svg {
       width: 15px;

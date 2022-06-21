@@ -1,0 +1,125 @@
+.preference {
+  &__content {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__title {
+    margin-bottom: 4.95vw;
+  }
+
+  &__image-wrapper {
+    position: absolute;
+    left: -6%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    margin: 0 auto;
+    width: 33.59vw;
+    height: 31.77vw;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__list {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5.2vw;
+    pointer-events: none;
+
+    &-item {
+      display: flex;
+      border-radius: 5px;
+      padding: 1.3vw 1.82vw;
+      background: linear-gradient(265.27deg, rgba(255 255 255 / 39%) -4.05%, rgba(242 242 242 / 33%) 100%), linear-gradient(87.44deg, #dcdcdc 2.23%, #dcdcdc 2.24%, #fff 42.97%, #fbfbfb 69.45%, #ebebeb 100%);
+
+      &-icon {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1.45vw;
+        border-radius: 4px;
+        width: 4vw;
+        height: 4vw;
+        background: linear-gradient(98.55deg, #9099a5 7.18%, #a8afb8 55.48%, #9099a5 95.5%);
+
+        img {
+          width: 1.56vw;
+          height: 1.56vw;
+          object-fit: contain;
+        }
+      }
+
+      &-title {
+        margin: 0;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 1.25vw;
+        line-height: 110%;
+        color: #5b5b5b;
+      }
+
+      &-text {
+        font-weight: 600;
+        font-size: 0.94vw;
+        line-height: 120%;
+        color: #5b5b5b;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 46px;
+      }
+
+      &--first {
+        max-width: 23.4vw;
+      }
+
+      &--second,
+      &--fourth {
+        max-width: 21.35vw;
+      }
+
+      &--third {
+        max-width: 27.34vw;
+      }
+
+      &--fifth {
+        max-width: 20.31vw;
+      }
+
+      &--sixth {
+        max-width: 28.125vw;
+      }
+    }
+
+    &--right {
+      align-items: flex-end;
+    }
+  }
+
+  &__youtube {
+    position: absolute;
+    left: 38%;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 65px;
+    width: 5.2vw;
+    height: 5.2vw;
+    box-shadow: 0 4px 14px rgba(139 33 33 / 25%);
+    background: #fff;
+
+    img {
+      width: 2.865vw;
+      height: 1.98vw;
+    }
+  }
+}
