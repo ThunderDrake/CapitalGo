@@ -1,5 +1,4 @@
 .about {
-  margin-bottom: 250px;
   padding-top: 4.7vw;
   background: linear-gradient(180deg, #10122b 0.89%, #000102 100%);
 
@@ -165,5 +164,34 @@
       background: linear-gradient(180deg, rgba(255 255 255 / 100%) 0%, rgba(221 221 224 / 100%) 98.77%);
       transform: translateX(-50%);
     }
+  }
+
+  &__name {
+    position: absolute;
+    left: 60%;
+    top: 45%;
+    max-width: 16.67vw;
+    font-family: var(--font-family-second);
+    font-weight: 700;
+    font-size: 2.6vw;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    background: linear-gradient(98.62deg, #b3d1ff -24.09%, #fff 45.65%, #7393c4 109.82%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transform: translateX(-50%);
+  }
+
+  &__position {
+    position: absolute;
+    right: 15%;
+    top: 58%;
+    font-style: italic;
+    font-size: 1.25vw;
+    line-height: 130%;
+    color: var(--light-color);
   }
 }
