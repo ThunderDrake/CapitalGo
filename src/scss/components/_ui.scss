@@ -80,6 +80,15 @@
   text-fill-color: transparent;
 }
 
+.--title-text-red {
+  color: var(--main-red-color);
+  background: var(--main-red-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 .--text-underline {
   display: inline;
   background: no-repeat 0 100%;

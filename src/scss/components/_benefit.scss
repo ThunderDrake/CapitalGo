@@ -1,0 +1,160 @@
+.benefit {
+  padding-top: 4.58vw;
+  padding-bottom: 16.67vw;
+  background-image: url("../img/benefit-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1a1638;
+
+  &__title {
+    margin-bottom: 2.81vw;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__items {
+    margin-right: 2.08vw;
+    width: 68%;
+  }
+
+  &__text {
+    width: 25%;
+    font-weight: 600;
+    font-size: 1.04vw;
+    line-height: 135%;
+
+    p {
+      margin: 0;
+      color: #c8c8c8;
+
+      &:not(:last-child) {
+        margin-bottom: 1.52vw;
+      }
+
+      &:last-child {
+        margin-bottom: 2.08vw;
+      }
+    }
+  }
+
+  &__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: 5% 0 auto auto;
+    width: 42.2vw;
+    height: 14.58vw;
+  }
+
+  &__item {
+    &-image {
+      display: block;
+      width: 6.51vw;
+      height: 3.65vw;
+      object-fit: cover;
+    }
+
+    &-descr {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+
+      &--first {
+        left: -17.5%;
+        top: 15%;
+        width: 14.32vw;
+      }
+
+      &--second {
+        left: 4%;
+        top: 80%;
+        width: 10.16vw;
+      }
+
+      &--third {
+        left: 18%;
+        top: 0%;
+        width: 12.5vw;
+      }
+
+      &--fourth {
+        left: 37%;
+        top: 55%;
+        width: 10.46vw;
+      }
+
+      &--fifth {
+        left: 48.5%;
+        top: -23%;
+        width: 14.58vw;
+      }
+
+      &--sixth {
+        left: 72%;
+        top: 32%;
+        width: 9.38vw;
+      }
+
+      &--seventh {
+        left: 92%;
+        top: -26%;
+        width: 6.51vw;
+      }
+
+      &--revers {
+        flex-direction: column-reverse;
+
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &-text {
+      font-weight: 600;
+      font-size: 0.94vw;
+      line-height: 135%;
+      color: #f7f7f7;
+    }
+
+    &-marker {
+      display: block;
+      margin: 0 auto;
+      width: 3.7vw;
+      height: 7.03vw;
+    }
+
+    &--first {
+      grid-column: 1;
+      grid-row: 4;
+    }
+
+    &--second {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    &--third {
+      grid-column: 3;
+      grid-row: 3;
+    }
+
+    &--fourth {
+      grid-column: 4;
+      grid-row: 2;
+    }
+
+    &--fifth {
+      grid-column: 5;
+      grid-row: 2;
+    }
+
+    &--sixth {
+      grid-column: 6;
+      grid-row: 1;
+    }
+  }
+}
