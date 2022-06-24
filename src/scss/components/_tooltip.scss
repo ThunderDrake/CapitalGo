@@ -26,6 +26,7 @@
       background: rgba(169 31 35 / 100%);
       -webkit-animation: pulse 3s infinite;
       animation: pulse 3s infinite;
+      pointer-events: none;
     }
 
     &::after {
@@ -37,9 +38,19 @@
       height: 15px;
     }
 
+    &-icon {
+      --current-color: var(--light-color);
+    }
+
     &:hover + .tooltip__txt {
       opacity: 1;
       visibility: visible;
+    }
+
+    &:hover {
+      &-icon {
+        --current-color: #8f0b0b;
+      }
     }
   }
 
@@ -59,6 +70,21 @@
       &:not(:last-child) {
         margin-bottom: 18px;
       }
+    }
+
+    @include mq(1024) {
+      inset: auto 65px -55px auto !important;
+    }
+
+    @include mq(460) {
+      width: 90vw;
+      inset: auto 5px -370px auto !important;
+    }
+  }
+
+  &:hover {
+    .tooltip__btn-icon {
+      --current-color: #8f0b0b;
     }
   }
 }

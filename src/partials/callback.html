@@ -1,4 +1,4 @@
-<section class="callback">
+<section class="callback" id="callback">
   <div class="container callback__container">
     <div class="callback__picture">
       <picture>
@@ -16,11 +16,11 @@
         <div class="callback-form__subtitle">Заполните форму, чтобы наш специалист связался с вами и подробно ответил на все вопросы</div>
         <label class="callback-form__label">
           <span class="callback-form__label-text">Введите ваше имя</span>
-          <input class="callback-form__input" type="text" placeholder="Ваше имя">
+          <input class="callback-form__input callback-form__input--name" name="Имя клиента" type="text" placeholder="Ваше имя" id="callback-name">
         </label>
         <label class="callback-form__label">
           <span class="callback-form__label-text">Введите телефон</span>
-          <input class="callback-form__input callback-form__input--tel" type="tel">
+          <input class="callback-form__input callback-form__input--tel" name="Телефон для связи" type="tel" id="callback-tel">
         </label>
         <button type="submit" class="btn-reset callback-form__button button button--main button--small --button-shadow-25 --button-pulse">Получить ответ</button>
         <p class="callback-form__policy">Нажимая кнопку вы даете свое согласие на  <a class="callback-form__policy-link" href="#">обработку персональных данных</a></p>

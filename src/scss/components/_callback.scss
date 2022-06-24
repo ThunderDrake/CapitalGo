@@ -8,21 +8,38 @@
   background-repeat: no-repeat;
 
   &__picture {
-    z-index: 2;
     position: absolute;
     left: 23%;
     bottom: -5%;
+    z-index: 2;
 
     img {
       width: 33.85vw;
       height: 45.19vw;
       object-fit: contain;
+
+      @include mq(768) {
+        width: 45vw;
+        height: auto;
+      }
+    }
+
+    @include mq(768) {
+      left: 11%;
+    }
+
+    @include mq(460) {
+      display: none;
     }
   }
 
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @include mq(460) {
+      grid-template-columns: none;
+    }
   }
 
   &__name {
@@ -58,6 +75,10 @@
     &-wrapper {
       position: relative;
       grid-column: 2;
+
+      @include mq(460) {
+        grid-column: 1;
+      }
     }
 
     &--under {
@@ -75,7 +96,16 @@
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       transform: translateX(-50%);
+
+      @include mq(460) {
+        left: 50%;
+        width: 98%;
+      }
     }
+  }
+
+  @include mq(460) {
+    background-position-x: 100%;
   }
 }
 
@@ -103,6 +133,15 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+
+    @include mq(768) {
+      font-size: 2.7vw;
+    }
+
+    @include mq(460) {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
   }
 
   &__subtitle {
@@ -118,6 +157,16 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+
+    @include mq(768) {
+      max-width: none;
+      font-size: 1.7vw;
+    }
+
+    @include mq(460) {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
   }
 
   &__label {
@@ -133,7 +182,19 @@
       font-size: 0.73vw;
       line-height: 130%;
       color: var(--light-color);
+
+      @include mq(768) {
+        font-size: 14px;
+      }
     }
+
+    @include mq(768) {
+      max-width: 90%;
+    }
+  }
+
+  &__label:last-of-type {
+    margin-bottom: 1.15vw;
   }
 
   &__input {
@@ -149,14 +210,19 @@
       color: #b4b4b4;
     }
 
-    &--tel {
-      margin-bottom: 1.15vw;
+    @include mq(768) {
+      height: 50px;
+      font-size: 14px;
     }
   }
 
   &__button {
     margin: 0 auto;
     max-width: 16.93vw;
+
+    @include mq(768) {
+      max-width: 90%;
+    }
   }
 
   &__policy {
@@ -171,5 +237,17 @@
       text-decoration: underline;
       color: currentcolor;
     }
+
+    @include mq(768) {
+      max-width: 90%;
+    }
+  }
+
+  @include mq(768) {
+    width: 36.65vw;
+  }
+
+  @include mq(460) {
+    width: 100%;
   }
 }

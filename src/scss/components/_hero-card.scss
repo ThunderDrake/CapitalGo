@@ -6,7 +6,11 @@
 
   &__icon {
     margin-right: 25px;
-    width: 94px;
+    width: 4.9vw;
+
+    @include mq(460) {
+      width: 50px;
+    }
   }
 
   &__title {
@@ -21,6 +25,18 @@
 
     span {
       color: #e21616;
+    }
+
+    @include mq(1024) {
+      font-size: 1.2vw;
+    }
+
+    @include mq(768) {
+      font-size: 1.8vw;
+    }
+
+    @include mq(460) {
+      font-size: 14px;
     }
   }
 }

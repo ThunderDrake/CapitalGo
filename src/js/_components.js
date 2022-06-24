@@ -1,2 +1,6 @@
 import './components/utils.js'
 import './components/reviews-slider.js'
+import './components/callback-form.js'
+import './components/sticky-header.js'
+import './components/modal-form-validation.js'
+import './components/burger.js'

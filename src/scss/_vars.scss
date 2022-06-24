@@ -25,3 +25,9 @@
   // transitions
   --transition-setting: 0.2s ease-in;
 }
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --content-width: 85.45vw;
+  }
+}

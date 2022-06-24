@@ -12,5 +12,17 @@
       width: 24px;
       height: 24px;
     }
+
+    &--telegram:hover {
+      .socials__item-icon {
+        --current-color: #00a3ff;
+      }
+    }
+
+    &--whatsapp:hover {
+      .socials__item-icon {
+        --current-color: #01bf2b;
+      }
+    }
   }
 }

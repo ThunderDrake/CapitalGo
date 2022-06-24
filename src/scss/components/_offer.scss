@@ -24,6 +24,11 @@
       display: flex;
       flex-direction: column;
     }
+
+    @include mq(460) {
+      grid-template-columns: none;
+      height: auto;
+    }
   }
 
   &__item {
@@ -40,11 +45,15 @@
 
     &-text {
       position: relative;
-      z-index: 2;
+      z-index: 0;
       margin: 0;
       font-size: 1.25vw;
       line-height: 130%;
       color: #828282;
+
+      @include mq(460) {
+        font-size: 18px;
+      }
     }
 
     &:not(:last-child) {
@@ -66,30 +75,122 @@
     &--first {
       .offer__item-text {
         max-width: 11.2vw;
+
+        @include mq(460) {
+          max-width: 210px;
+        }
+      }
+
+      img {
+        width: 15.1vw;
+
+        @include mq(460) {
+          width: 160px;
+        }
+      }
+
+      @include mq(460) {
+        height: 180px;
       }
     }
 
     &--second {
       .offer__item-text {
         max-width: 14.32vw;
+
+        @include mq(460) {
+          max-width: 210px;
+        }
+      }
+
+      img {
+        width: 10.42vw;
+
+        @include mq(460) {
+          width: 110px;
+        }
+      }
+
+      @include mq(460) {
+        height: 120px;
+      }
+    }
+
+    &--third {
+      img {
+        @include mq(460) {
+          position: static;
+        }
       }
     }
 
     &--fourth {
       .offer__item-text {
         max-width: 13.54vw;
+
+        @include mq(460) {
+          max-width: 180px;
+        }
+      }
+
+      img {
+        width: 13.8vw;
+
+        @include mq(460) {
+          width: 140px;
+        }
+      }
+
+      @include mq(460) {
+        height: 120px;
       }
     }
 
     &--fifth {
       .offer__item-text {
         max-width: 11.72vw;
+
+        @include mq(460) {
+          max-width: 225px;
+        }
       }
+
+      img {
+        width: 8.85vw;
+
+        @include mq(460) {
+          width: 105px;
+        }
+      }
+
+      @include mq(460) {
+        height: 225px;
+      }
+    }
+
+    @include mq(460) {
+      margin-bottom: 15px !important;
     }
   }
 
   &__button {
     display: block;
     margin: 0 auto;
+
+    @include mq(768) {
+      max-width: 35vw;
+    }
+
+    @include mq(460) {
+      max-width: 100%;
+    }
+  }
+
+  @include mq(1024) {
+    margin-top: -35px;
+  }
+
+  @include mq(460) {
+    padding-top: 80px;
   }
 }

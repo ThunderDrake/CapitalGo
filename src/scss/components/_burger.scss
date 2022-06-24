@@ -13,4 +13,12 @@
     width: 24px;
     height: 16px;
   }
+
+  @include mq(1024) {
+    font-size: 1.5vw;
+  }
+
+  @include mq(460) {
+    font-size: 0;
+  }
 }

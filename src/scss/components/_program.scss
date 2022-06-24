@@ -14,6 +14,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0 2.4vw;
+
+    @include mq(460) {
+      grid-template-columns: none;
+    }
   }
 
   &__item {
@@ -38,17 +42,33 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+
+      @include mq(1024) {
+        font-size: 2.5vw;
+      }
+
+      @include mq(460) {
+        font-size: 20px;
+      }
     }
 
     &-time {
       margin-bottom: 1.15vw;
       color: var(--titles-text-color, currentcolor);
+
+      @include mq(460) {
+        font-size: 12px;
+      }
     }
 
     &-subtitle {
       margin-bottom: 1.56vw;
       text-transform: uppercase;
       color: var(--titles-text-color, currentcolor);
+
+      @include mq(460) {
+        font-size: 14px;
+      }
     }
 
     &-small-title {
@@ -58,6 +78,18 @@
       font-size: 1.04vw;
       line-height: 130%;
       color: var(--titles-text-color, currentcolor);
+
+      @include mq(1024) {
+        font-size: 1.2vw;
+      }
+
+      @include mq(1024) {
+        font-size: 1.8vw;
+      }
+
+      @include mq(460) {
+        font-size: 18px;
+      }
     }
 
     &-list {
@@ -72,6 +104,18 @@
       &:not(:last-child) {
         margin-bottom: 0.26vw;
       }
+
+      @include mq(1024) {
+        font-size: 1.5vw;
+      }
+
+      @include mq(1024) {
+        font-size: 1.8vw;
+      }
+
+      @include mq(460) {
+        font-size: 14px;
+      }
     }
 
     cite {
@@ -81,6 +125,18 @@
       font-size: 0.83vw;
       line-height: 140%;
       text-align: center;
+
+      @include mq(1024) {
+        font-size: 1.1vw;
+      }
+
+      @include mq(768) {
+        font-size: 1.5vw;
+      }
+
+      @include mq(460) {
+        font-size: 14px;
+      }
     }
 
     &-result {
@@ -101,6 +157,15 @@
 
     &-button {
       margin-bottom: -1.82vw;
+
+      @include mq(1024) {
+        max-width: 25vw;
+      }
+
+      @include mq(460) {
+        margin-bottom: -15px;
+        max-width: 100%;
+      }
     }
 
     &--white {
@@ -111,6 +176,10 @@
       margin-top: 1.3vw;
       margin-bottom: 3.65vw;
       background: linear-gradient(88.53deg, #eee 1.5%, #fff 46.7%, #e1e1e1 99.02%);
+
+      @include mq(460) {
+        margin-bottom: 35px;
+      }
     }
 
     &--red {
@@ -120,6 +189,10 @@
       --result-border-color: #f2f1f1;
 
       background: linear-gradient(90deg, #7e0408 0%, #ba4347 51.56%, #a00f13 100%);
+
+      @include mq(460) {
+        margin-bottom: 35px;
+      }
     }
 
     &--blue {
@@ -131,6 +204,10 @@
       margin-top: 1.3vw;
       margin-bottom: 5.21vw;
       background: linear-gradient(88.37deg, #121a3c 6.07%, #2f3655 53.4%, #1d264f 99.75%);
+
+      @include mq(460) {
+        margin-bottom: 35px;
+      }
     }
 
     &-time,
@@ -139,6 +216,23 @@
       font-size: 0.83vw;
       line-height: 130%;
       text-align: center;
+
+      @include mq(1024) {
+        font-size: 1.5vw;
+      }
+
+      @include mq(460) {
+        font-size: 14px;
+      }
+    }
+
+    @include mq(460) {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    @include hover {
+      transform: scale(1.2);
     }
   }
 
@@ -169,6 +263,17 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+
+      @include mq(460) {
+        font-size: 53px;
+      }
+    }
+
+    @include mq(460) {
+      display: none;
+      margin-bottom: 55px;
+      max-width: 100%;
+      font-size: 30px;
     }
   }
 
@@ -192,6 +297,10 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+
+      @include mq(460) {
+        font-size: 26px;
+      }
     }
 
     &-image {
@@ -200,6 +309,32 @@
       bottom: -60%;
       width: 7.81vw;
       height: 7.29vw;
+
+      @include mq(460) {
+        right: 40%;
+        top: -100%;
+        bottom: auto;
+        width: 95px;
+        height: auto;
+      }
+    }
+
+    @include mq(460) {
+      display: none;
+      font-size: 20px;
+    }
+  }
+
+  &__mobile-control {
+    display: none;
+
+    @include mq(460) {
+      display: block;
+
+      .program__payment,
+      .program__discont {
+        display: block;
+      }
     }
   }
 }

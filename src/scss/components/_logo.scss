@@ -9,7 +9,7 @@
     padding-left: 25px;
     width: 8.85vw;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.73vw;
     line-height: 140%;
     text-transform: uppercase;
     color: var(--text-light-color);
@@ -24,10 +24,35 @@
       height: 100%;
       background-color: var(--dark-red-color);
     }
+
+    @include mq(1024) {
+      width: 16vw;
+      font-size: 1vw;
+    }
+
+    @include mq(768) {
+      font-size: 1.3vw;
+    }
+
+    @include mq(460) {
+      margin-left: 10px;
+      padding-left: 10px;
+      width: 45vw;
+      font-size: 12px;
+    }
   }
 
   &__image {
     width: 7.81vw;
     height: 3.75vw;
+
+    @include mq(768) {
+      width: 150px;
+      height: auto;
+    }
+
+    @include mq(460) {
+      width: 100px;
+    }
   }
 }

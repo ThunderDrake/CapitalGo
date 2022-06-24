@@ -8,15 +8,27 @@
 
   &__title {
     margin-bottom: 2.81vw;
+
+    @include mq(460) {
+      margin-bottom: 84px;
+    }
   }
 
   &__content {
     display: flex;
+
+    @include mq(460) {
+      flex-direction: column;
+    }
   }
 
   &__items {
     margin-right: 2.08vw;
     width: 68%;
+
+    @include mq(460) {
+      width: 100%;
+    }
   }
 
   &__text {
@@ -37,6 +49,15 @@
         margin-bottom: 2.08vw;
       }
     }
+
+    @include mq(1024) {
+      font-size: 1.8vw;
+    }
+
+    @include mq(460) {
+      width: 100%;
+      font-size: 18px;
+    }
   }
 
   &__grid {
@@ -47,6 +68,21 @@
     margin: 5% 0 auto auto;
     width: 42.2vw;
     height: 14.58vw;
+
+    @include mq(1024) {
+      column-gap: 10px;
+      width: 52.2vw;
+      height: 22.58vw;
+    }
+
+    @include mq(460) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      margin: 0;
+      margin-bottom: 50px;
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__item {
@@ -55,6 +91,15 @@
       width: 6.51vw;
       height: 3.65vw;
       object-fit: cover;
+
+      @include mq(1024) {
+        width: 100%;
+        height: 100%;
+      }
+
+      @include mq(460) {
+        max-width: 110px;
+      }
     }
 
     &-descr {
@@ -66,36 +111,111 @@
         left: -17.5%;
         top: 15%;
         width: 14.32vw;
+
+        @include mq(1024) {
+          left: -14.5%;
+          top: 36%;
+        }
+
+        @include mq(460) {
+          left: 5.5%;
+          top: 0;
+          width: 255px;
+
+          img {
+            margin-left: 20px;
+          }
+        }
       }
 
       &--second {
         left: 4%;
         top: 80%;
         width: 10.16vw;
+
+        @include mq(1024) {
+          left: 6%;
+          top: 95%;
+        }
+
+        @include mq(460) {
+          left: 38%;
+          top: 19%;
+          width: 165px;
+
+          img {
+            margin-left: 20px;
+          }
+        }
       }
 
       &--third {
         left: 18%;
         top: 0%;
         width: 12.5vw;
+
+        @include mq(1024) {
+          left: 21%;
+          top: 13%;
+        }
+
+        @include mq(460) {
+          left: -3%;
+          top: 36%;
+          width: 150px;
+        }
       }
 
       &--fourth {
         left: 37%;
         top: 55%;
         width: 10.46vw;
+
+        @include mq(1024) {
+          left: 40%;
+          top: 68%;
+        }
+
+        @include mq(460) {
+          left: 30%;
+          top: 51%;
+          width: 160px;
+        }
       }
 
       &--fifth {
         left: 48.5%;
         top: -23%;
         width: 14.58vw;
+
+        @include mq(1024) {
+          left: 52.5%;
+          top: -11%;
+        }
+
+        @include mq(460) {
+          left: -4.5%;
+          top: auto;
+          bottom: 11%;
+          width: 160px;
+        }
       }
 
       &--sixth {
         left: 72%;
         top: 32%;
         width: 9.38vw;
+
+        @include mq(1024) {
+          left: 75%;
+          top: 41%;
+        }
+
+        @include mq(460) {
+          left: 29%;
+          top: 85%;
+          width: 160px;
+        }
       }
 
       &--seventh {
@@ -118,6 +238,10 @@
       font-size: 0.94vw;
       line-height: 135%;
       color: #f7f7f7;
+
+      @include mq(460) {
+        font-size: 16px;
+      }
     }
 
     &-marker {
@@ -125,36 +249,83 @@
       margin: 0 auto;
       width: 3.7vw;
       height: 7.03vw;
+
+      @include mq(460) {
+        width: 50px;
+        height: 110px;
+      }
     }
 
     &--first {
       grid-column: 1;
       grid-row: 4;
+
+      @include mq(460) {
+        grid-column: 1;
+        grid-row: 2;
+        margin-right: 0;
+        margin-bottom: 75px;
+        margin-left: auto;
+      }
     }
 
     &--second {
       grid-column: 2;
       grid-row: 3;
+
+      @include mq(460) {
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 75px;
+      }
     }
 
     &--third {
       grid-column: 3;
       grid-row: 3;
+
+      @include mq(460) {
+        grid-column: 1;
+        grid-row: 4;
+        margin-right: 0;
+        margin-bottom: 75px;
+        margin-left: auto;
+      }
     }
 
     &--fourth {
       grid-column: 4;
       grid-row: 2;
+
+      @include mq(460) {
+        grid-column: 2;
+        grid-row: 3;
+        margin-top: 75px;
+      }
     }
 
     &--fifth {
       grid-column: 5;
       grid-row: 2;
+
+      @include mq(460) {
+        grid-column: 1;
+        grid-row: 6;
+        margin-right: 0;
+        margin-bottom: 75px;
+        margin-left: auto;
+      }
     }
 
     &--sixth {
       grid-column: 6;
       grid-row: 1;
+
+      @include mq(460) {
+        grid-column: 2;
+        grid-row: 5;
+        margin-top: 75px;
+      }
     }
   }
 }

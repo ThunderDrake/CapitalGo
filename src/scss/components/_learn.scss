@@ -4,6 +4,10 @@
     column-gap: 1.15vw;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
+
+    @include mq(460) {
+      grid-template-columns: none;
+    }
   }
 
   &__list {
@@ -27,6 +31,12 @@
         background-repeat: no-repeat;
         transform: translateY(50%);
         pointer-events: none;
+
+        @include mq(460) {
+          left: -15px;
+          width: 8px;
+          height: 8px;
+        }
       }
 
       &:not(:last-child) {
@@ -36,21 +46,53 @@
       span {
         font-weight: 600;
       }
+
+      @include mq(1024) {
+        font-size: 1.5vw;
+      }
+
+      @include mq(768) {
+        font-size: 1.8vw;
+      }
+
+      @include mq(460) {
+        font-size: 18px;
+      }
     }
   }
 
   &__text {
     padding-left: 40px;
+
+    @include mq(460) {
+      padding-left: 0;
+    }
   }
 
   &__graph-image {
     width: 33.07vw;
     height: 25.26vw;
+
+    @include mq(460) {
+      width: 90%;
+      height: auto;
+    }
   }
 
   &__button {
     padding: 1.15vw 2.2vw 1.35vw;
     max-width: 20.3vw;
     font-size: 0.89vw;
+
+    @include mq(1024) {
+      max-width: 25vw;
+      font-size: 1.2vw;
+    }
+
+    @include mq(460) {
+      padding: 20px;
+      max-width: none;
+      font-size: 14px;
+    }
   }
 }
