@@ -7,8 +7,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: max(1.56vw, 19px);
+    height: max(1.56vw, 19px);
     background-color: #fb242a;
 
     &::before,
@@ -20,8 +20,8 @@
       z-index: -1;
       display: block;
       border-radius: 50%;
-      width: 30px;
-      height: 30px;
+      width: max(1.56vw, 19px);
+      height: max(1.56vw, 19px);
       box-shadow: 0 0 1rem rgba(169 31 35 / 100%);
       background: rgba(169 31 35 / 100%);
       -webkit-animation: pulse 3s infinite;
@@ -34,8 +34,8 @@
     }
 
     svg {
-      width: 15px;
-      height: 15px;
+      width: max(0.78vw, 10px);
+      height: max(0.78vw, 10px);
     }
 
     &-icon {
@@ -57,15 +57,16 @@
   &__txt {
     display: block;
     border-radius: 7px;
-    padding: 27px 26px 30px 34px;
+    padding: 1.4vw 1.35vw 1.56vw 1.77vw;
     width: 570px;
     background-color: #fff;
     opacity: 0;
     visibility: hidden;
-    inset: auto 55px 55px auto !important;
+    inset: auto 2.86vw 2.86vw auto !important;
 
     p {
       margin: 0;
+      font-size: max(0.83vw, 12px);
 
       &:not(:last-child) {
         margin-bottom: 18px;
@@ -78,7 +79,7 @@
 
     @include mq(460) {
       width: 90vw;
-      inset: auto 5px -370px auto !important;
+      inset: auto 5px -175px auto !important;
     }
   }
 

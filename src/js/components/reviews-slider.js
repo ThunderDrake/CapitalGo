@@ -12,6 +12,8 @@ const swiper = new Swiper(_vars.reviewSlider, {
   slidesPerView: 'auto',
   spaceBetween: -55,
   centeredSlides: true,
+  loop: true,
+  loopedSlides: 3,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

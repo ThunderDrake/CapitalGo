@@ -192,6 +192,7 @@
     height: 5.2vw;
     box-shadow: 0 4px 14px rgba(139 33 33 / 25%);
     background: #fff;
+    transition: box-shadow 0.3s ease-in-out;
 
     img {
       width: 2.865vw;
@@ -206,6 +207,10 @@
     @include mq(460) {
       width: 55px;
       height: 55px;
+    }
+
+    &:hover {
+      box-shadow: 0 4px 14px rgb(139 33 33 / 45%);
     }
   }
 }

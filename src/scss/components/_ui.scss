@@ -111,17 +111,14 @@
   &::after {
     content: "";
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 50%;
-    z-index: 1;
-    border-radius: 50%;
-    width: 200%;
-    height: 200%;
-    background-color: #fff;
-    opacity: 0.3;
-    transform: translate(-25%, 75%) scale(0);
-    animation: button-pulse 15s infinite;
+    left: -10%;
+    top: -25px;
+    z-index: 5;
+    width: 20px;
+    height: calc(100% + 50px);
+    background: rgba(255 255 255 / 25%);
+    transform: rotate(20deg);
+    animation: blick 3s ease-in-out 1.5s infinite;
     pointer-events: none;
   }
 }
@@ -180,6 +177,20 @@
   }
 }
 
+@keyframes blick {
+  0% {
+    left: -10%;
+  }
+
+  30% {
+    left: 110%;
+  }
+
+  100% {
+    left: 110%;
+  }
+}
+
 .sticky {
   position: fixed;
   left: 0;
@@ -187,7 +198,7 @@
   top: 0;
   z-index: 10;
   display: block !important;
-  padding: 25px 0;
+  padding: 10px 0;
   width: 100%;
-  background: linear-gradient(180deg, #1e2543 0%, #020b31 100%);
+  background-color: rgba(#020b31, 0.8);
 }

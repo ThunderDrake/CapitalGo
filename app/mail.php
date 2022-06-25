@@ -11,7 +11,7 @@ $c = true;
 // Формирование самого письма
 $title = "Заголовок письма";
 foreach ( $_POST as $key => $value ) {
-  if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
+  if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" && $key != "checkbox-rule" ) {
     $body .= "
     " . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
       <td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
@@ -32,16 +32,16 @@ try {
   $mail->SMTPAuth   = true;
 
   // Настройки вашей почты
-  $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = ''; // Логин на почте
-  $mail->Password   = ''; // Пароль на почте
+  $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
+  $mail->Username   = 'franshiza-partspoint@mail.ru'; // Логин на почте
+  $mail->Password   = 'x6UYkEy3USuqf5zKmR44'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('franshiza-partspoint@mail.ru', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('');
+  $mail->addAddress('super@franshiza-partspoint.su');
 
   // Прикрипление файлов к письму
   if (!empty($file['name'][0])) {

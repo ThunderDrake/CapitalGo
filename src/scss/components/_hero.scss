@@ -1,4 +1,5 @@
 .hero {
+  overflow: hidden;
   height: 51vw;
   background-image: url("../img/hero-bg.jpg");
   background-size: cover;
@@ -135,7 +136,12 @@
     position: absolute;
     right: -4%;
     top: -5%;
-    z-index: 0;
+    z-index: 1;
+
+    @include mq(1440) {
+      right: -8%;
+      top: 80%;
+    }
 
     @include mq(1024) {
       right: -15%;

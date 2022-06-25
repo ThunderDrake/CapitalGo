@@ -31,6 +31,8 @@
     }
 
     @include mq(768) {
+      margin-left: 15px;
+      padding-left: 15px;
       font-size: 1.3vw;
     }
 
@@ -47,12 +49,8 @@
     height: 3.75vw;
 
     @include mq(768) {
-      width: 150px;
+      width: 80px;
       height: auto;
-    }
-
-    @include mq(460) {
-      width: 100px;
     }
   }
 }

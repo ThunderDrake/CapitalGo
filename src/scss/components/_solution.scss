@@ -23,6 +23,7 @@
     &-item {
       display: flex;
       align-items: baseline;
+      transition: transform 0.3s ease-in-out;
 
       &-number {
         position: relative;
@@ -63,6 +64,10 @@
 
       &:not(:last-child) {
         margin-bottom: 2.34vw;
+      }
+
+      &:hover {
+        transform: scale(1.05);
       }
 
       @include mq(768) {
