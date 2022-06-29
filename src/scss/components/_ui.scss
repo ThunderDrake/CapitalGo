@@ -123,8 +123,39 @@
   }
 }
 
+.--button-pulse-blue {
+  &::after {
+    background: rgba(127 172 211 / 25%);
+  }
+}
+
 .--mb-80 {
   margin-bottom: 4.167vw;
+}
+
+.online {
+  display: inline-block;
+  vertical-align: bottom;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  background: #37a692;
+  -webkit-animation: flash 2s infinite;
+  animation: flash 2s infinite;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes button-pulse {
@@ -158,8 +189,8 @@
 @keyframes pulse {
   0% {
     opacity: 0;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
   }
 
   40% {
@@ -172,8 +203,8 @@
 
   100% {
     opacity: 0;
-    -webkit-transform: scale(1.8);
-    transform: scale(1.8);
+    -webkit-transform: scale(2.2);
+    transform: scale(2.2);
   }
 }
 
@@ -188,6 +219,18 @@
 
   100% {
     left: 110%;
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  100% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 }
 

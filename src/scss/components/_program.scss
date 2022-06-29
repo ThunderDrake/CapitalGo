@@ -310,6 +310,7 @@
       bottom: -60%;
       width: 7.81vw;
       height: 7.29vw;
+      animation: swing 2.5s alternate infinite;
 
       @include mq(460) {
         right: 40%;

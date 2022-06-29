@@ -41,7 +41,7 @@ try {
   $mail->setFrom('franshiza-partspoint@mail.ru', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('super@franshiza-partspoint.su');
+  $mail->addAddress('capital@capital-go.ru');
 
   // Прикрипление файлов к письму
   if (!empty($file['name'][0])) {

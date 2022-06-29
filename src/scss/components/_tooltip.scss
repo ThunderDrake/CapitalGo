@@ -40,12 +40,14 @@
 
     &-icon {
       --current-color: var(--light-color);
+
+      pointer-events: none;
     }
 
-    &:hover + .tooltip__txt {
-      opacity: 1;
-      visibility: visible;
-    }
+    // &:hover + .tooltip__txt {
+    //   opacity: 1;
+    //   visibility: visible;
+    // }
 
     &:hover {
       &-icon {
@@ -62,7 +64,12 @@
     background-color: #fff;
     opacity: 0;
     visibility: hidden;
-    inset: auto 2.86vw 2.86vw auto !important;
+    // inset: auto 2.86vw 2.86vw auto !important;
+
+    &[data-show] {
+      opacity: 1;
+      visibility: visible;
+    }
 
     p {
       margin: 0;
@@ -74,12 +81,12 @@
     }
 
     @include mq(1024) {
-      inset: auto 65px -55px auto !important;
+      // inset: auto 65px -55px auto !important;
     }
 
     @include mq(460) {
       width: 80vw;
-      inset: auto 5px -235px auto !important;
+      // inset: auto 5px -235px auto !important;
     }
   }
 
@@ -89,3 +96,4 @@
     }
   }
 }
+
