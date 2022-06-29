@@ -2,6 +2,7 @@ import { disableScroll } from '../functions/disable-scroll';
 import { enableScroll } from '../functions/enable-scroll';
 import { getHeaderHeight } from '../functions/header-height';
 import { createPopper, right} from '@popperjs/core';
+import AOS from 'aos';
 import _vars from "../_vars.js"
 
 getHeaderHeight();
@@ -41,4 +42,8 @@ showEvents.forEach((event) => {
 
 hideEvents.forEach((event) => {
   _vars.heroTooltipBtn.addEventListener(event, hide);
+});
+
+AOS.init({
+  once: true
 });
