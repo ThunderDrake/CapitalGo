@@ -135,11 +135,11 @@
 
 .online {
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: middle;
   border-radius: 50%;
-  width: 1em;
-  height: 1em;
-  background: #37a692;
+  width: 10px;
+  height: 10px;
+  background: #01bf2b;
   -webkit-animation: flash 2s infinite;
   animation: flash 2s infinite;
 }

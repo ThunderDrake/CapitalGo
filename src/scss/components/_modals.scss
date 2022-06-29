@@ -138,6 +138,8 @@
 }
 
 .modal--thankyou {
+  background-image: none;
+
   .modal__content {
     align-items: center;
     justify-content: center;
@@ -150,7 +152,7 @@
 
   .modal__text {
     text-align: center;
-    color: var(--color-text-light);
+    color: var(--light-color);
   }
 }
 
