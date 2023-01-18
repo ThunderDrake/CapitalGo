@@ -64,6 +64,8 @@ validationCallback.onSuccess((ev) => {
           document.body.classList.remove('disable-scroll');
           enableScroll();
         }, 5000)
+        ym(89279591,'reachGoal','form-submit');
+        return true;
       }
     }
   }
@@ -129,6 +131,8 @@ validationModalForm
         setTimeout(() => {
           modal.close();
         }, 5000)
+        ym(89279591,'reachGoal','form-submit');
+        return true;
       }
     }
   }
